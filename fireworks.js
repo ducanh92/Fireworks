@@ -404,7 +404,7 @@ var Fireworks = function(){
 	self.init();
 
   $('#start-button').click(function() {
-		var initialLaunchCount = 100;
+		var initialLaunchCount = 10;
 		while(initialLaunchCount--){
 			setTimeout(function(){
 				self.fireworks.push(new Firework(self.cw/2, self.ch, rand(50, self.cw-50), rand(50, self.ch/2)-50));
